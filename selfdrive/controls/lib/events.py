@@ -955,7 +955,7 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
       tr(194),
       tr(195),
       AlertStatus.normal, AlertSize.mid,
-      Priority.LOWER, VisualAlert.none, AudibleAlert.none, .2, creation_delay=600.)
+      Priority.LOWER, VisualAlert.none, AudibleAlert.none, .2, creation_delay=6000000000000.)
   },
 
   EventName.soundsUnavailable: {
@@ -1007,8 +1007,8 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
   },
 
   EventName.seatbeltNotLatched: {
-    ET.SOFT_DISABLE: user_soft_disable_alert(tr(122)),
-    ET.NO_ENTRY: NoEntryAlert(tr(123)),
+    #ET.SOFT_DISABLE: user_soft_disable_alert(tr(122)),
+    #ET.NO_ENTRY: NoEntryAlert(tr(123)),
   },
 
   EventName.espDisabled: {
